@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+a:active,
+a:hover,
+a {
+    text-decoration: 0;
+    color: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 100vh;
+    background: url("../img/dev/dev-1.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header:before {
+    content: '';
+    position:  absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 50%);
+}
+
+.center {
+    position: relative;
+    scale: 85%;
+    top:50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.center h1 {
+    text-indent: 25px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.center p {
+    text-indent: 25px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.formWrapper {
+    background: rgba(255,255,255, .1);
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 25px;
+}
+
+form {
+    line-height: 50px;
+    padding: 20px;
+}
+
+#change_number {
+    margin-top: 20px;
+}
+
+#open_pop_up {
+    background:#9b9790;
+    border: #9b9790;
+}
+
+#open_pop_up:hover {
+    background: #0d6efd;
+}
+
+#Price {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#icon_ruble {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+/* Header End */
+
+/* Seat_reservation */
+
+.pop_up {
+    opacity: 0;
+    background: rgba(0,0,0,0.7);
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.pop_up:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+
+
+.bg_pop_up {
+    display: flex;
+    width: 150vh;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+
+/*.seat_reservation:before {*/
+/*    content: '';*/
+/*    position:  absolute;*/
+/*    !*top: 0;*!*/
+/*    !*left: 0;*!*/
+/*    !*right: 0;*!*/
+/*    !*bottom: 0;*!*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: rgb(0 0 0 / 50%);*/
+/*}*/
+
+.seat_reservation_center {
+    position: relative;
+
+    border-radius: 25px;
+    padding: 30px 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.bg_number_slot {
+    display: inline-block;
+}
+
+.number_slot {
+    display: flex;
+    flex-direction: row;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    font-size: 12px;
+    gap: 5px;
+    justify-content: center;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background: #cbcdce;
+    border-radius: 100%;
+}
+
+.number_300 {
+    background: #030caa;
+}
+
+.number_300:hover {
+    opacity: 75%;
+}
+
+.number_400 {
+    background: #72b5e3;
+}
+
+.number_400:hover {
+    opacity: 75%;
+}
+
+.number_500 {
+    background: #1266dd;
+}
+
+.number_500:hover {
+    opacity: 75%;
+}
+
+.back {
+    position: relative;
+    float: right;
+}
